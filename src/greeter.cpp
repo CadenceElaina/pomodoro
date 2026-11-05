@@ -2,17 +2,34 @@
 
 namespace pomodoro
 {
-
   std::string greet(std::string_view name)
   {
     if (name.empty())
     {
-      name = "world";
+      return "Hello, World!!";
     }
-    std::string result{"Hello, "};
-    result.append(name);
-    result.append("!");
-    return result;
+    else
+    {
+      std::string res = "Hello, ";
+      res += name;
+      res += "!! :3";
+      return res;
+    }
+  }
+
+  std::string farewell(std::string_view name)
+  {
+    if (name.empty())
+    {
+      return "Bye! :3";
+    }
+    else
+    {
+      std::string res = "Bye, ";
+      res += name;
+      res += "!! :3";
+      return res;
+    }
   }
 
 } // namespace pomodoro

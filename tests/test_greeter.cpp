@@ -39,6 +39,8 @@ int main()
     check(pomodoro::greet("Ninja") == "Hello, Ninja!! :3", "greet with a name pls");
     check(pomodoro::greet("") == "Hello, World!!", "greet with empty name");
 
+    check(pomodoro::farewell("Nona") == "Bye, Nona!! :3", "say goodbye with name pls");
+    check(pomodoro::farewell("") == "Bye! :3", "goodbye with empty name");
     if (failures == 0)
     {
         std::cout << "All tests passed!\n";

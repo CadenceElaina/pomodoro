@@ -1,7 +1,7 @@
-#include <iostream>     // streams: std::cout (normal output), std::cerr (errors), std::cin (input)
-#include <string_view>  // std::string_view: read-only window onto existing text
+#include <iostream>    // streams: std::cout (normal output), std::cerr (errors), std::cin (input)
+#include <string_view> // std::string_view: read-only window onto existing text
 
-#include "pomodoro/greeter.hpp"  // found because core's include/ folder is PUBLIC in CMake
+#include "pomodoro/greeter.hpp" // found because core's include/ folder is PUBLIC in CMake
 
 // argc = argument count, argv = the arguments themselves
 //   ./app Ninja  ->  argc == 2, argv[0] == "./app", argv[1] == "Ninja"
@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
     //      namespaces and folders are UNRELATED, the folder only matters for #include
     // << = "send into the stream", so this writes the greeting and then a newline to the terminal
     std::cout << pomodoro::greet(name) << '\n';
-
+    std::cout << pomodoro::farewell(name) << '\n';
     // main is special: reaching the end without a return means return 0 (success)
 }

@@ -13,3 +13,8 @@ later, maybe:
   - internships: log 5 applications a week in a spreadsheet (or a simple spreadsheet-like UI).
     opens the spreadsheet + linkedin + other SWE internship sites + the internships repo
 - change the order of the cycle however I want
+
+## interviewers
+
+supposedly
+want from new grad is deterministic resource management (RAII), clear memory ownership, concurrency without data races, and OS-level interaction.

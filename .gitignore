@@ -1,0 +1,9 @@
+# build output (one folder per preset)
+build/
+
+# clangd / editors
+.cache/
+compile_commands.json
+.vscode/
+.idea/
+*.swp

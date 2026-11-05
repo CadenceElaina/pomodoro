@@ -1,3 +1,11 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+BreakBeforeBraces: Allman
+ColumnLimit: 100
+
+.clang-format
+Allman keeps braces on their own lines
+
 Header files allow us to put declarations in one place and then import them wherever we need them. This can save a lot of typing in multi-file programs.
 
 add.h contians a forward declaration for add()
